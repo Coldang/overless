@@ -1,0 +1,30 @@
+{
+   "manifest_version": 2,
+
+   "name": "Google",
+   "short_name": "Gol",
+   "description": "External Frameless Window for Google",
+   "version": "0.9.3",
+   "icons": {
+      "16": "assets/trello-mark-blue-16.png",
+      "32": "assets/trello-mark-blue-32.png",
+      "128": "assets/trello-mark-blue-128.png"
+   },
+
+   "minimum_chrome_version": "40",
+   "permissions": [
+      "webview",
+      "storage",
+      "<all_urls>",
+      "contextMenus",
+      "notifications",
+      "unlimitedStorage",
+      "app.window.fullscreen.overrideEsc"
+   ],
+
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   }
+}
